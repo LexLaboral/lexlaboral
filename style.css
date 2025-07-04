@@ -1,108 +1,96 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; overflow-x: hidden; }
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
 
 header {
   background: linear-gradient(135deg, #0E4D92, #1a5ba8);
-  color: #fff;
+  color: white;
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0; width: 100%;
   z-index: 1000;
+  padding: 1rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 
-.logo img { height: 50px; }
-.logo span { font-size: 1.5rem; font-weight: bold; margin-left: 10px; }
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
 
-.nav-links { display: flex; list-style: none; gap: 20px; }
-.nav-links a { color: #fff; text-decoration: none; }
-.nav-links a:hover { color: #25D366; }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
 
 .hero {
   background: linear-gradient(135deg, #0E4D92, #1a5ba8);
-  text-align: center;
+  color: white;
   padding: 150px 20px 80px;
-  color: #fff;
+  text-align: center;
 }
 
-.hero h1 { font-size: 3rem; }
-.hero-subtitle { font-size: 1.2rem; opacity: 0.9; }
-.hero-description { max-width: 600px; margin: 0 auto; opacity: 0.8; }
+.hero-subtitle {
+  font-size: 1.2rem;
+}
 
-.intro-box {
-  background: #f8f9ff;
-  border-left: 6px solid #0E4D92;
-  padding: 20px;
-  margin: 20px 0;
+.intro-section, .token-explanation, .packages, .cta-section {
+  padding: 60px 20px;
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
   color: #0E4D92;
-  margin-bottom: 10px;
 }
 
 .section-subtitle {
   text-align: center;
   color: #666;
-  margin-bottom: 20px;
-}
-
-.token-grid, .usage-grid, .services-grid, .packages-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.token-card, .usage-item, .service-card, .paquete {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .cta-section {
-  background: linear-gradient(135deg, #0E4D92, #1a5ba8);
-  color: #fff;
+  background: #1a5ba8;
+  color: white;
   text-align: center;
-  padding: 40px 20px;
 }
 
 .whatsapp-btn {
-  background: #25D366;
-  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
   padding: 10px 20px;
-  border-radius: 50px;
+  background: #25D366;
+  color: white;
+  border-radius: 25px;
   text-decoration: none;
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 20px 0;
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  color: #666;
 }
-
-footer p { text-align: center; font-size: 0.9rem; color: #aaa; }
 
 .float-contacto {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 20px; right: 20px;
+  width: 50px; height: 50px;
   background: #0E4D92;
-  color: #fff;
-  width: 50px;
-  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.5rem;
   text-decoration: none;
 }
