@@ -7,7 +7,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 800px;
 }
 
 /* Header */
@@ -33,13 +33,13 @@ nav {
     display: flex;
     align-items: center;
     gap: 6px; /* espacio entre img y texto */
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
 }
 
 .logo img {
-    max-height: 50px !important;
+    max-height: 100px !important;
     height: auto !important;
     width: auto !important;
     object-fit: contain;
