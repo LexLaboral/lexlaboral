@@ -29,10 +29,22 @@ nav {
     align-items: center;
 }
 
+.logo img {
+    max-height: 25px;
+    height: auto;
+    width: auto;
+    vertical-align: middle; /* para alinear con el texto */
+    margin-right: 5px; /* opcional, separa imagen del texto */
+}
+
+/* Para el texto “LexLaboral” */
 .logo {
-    font-size: 2.5rem; /* Reducido de 1.8rem a 1.4rem */
+    font-size: 1rem; /* ajusta el tamaño del texto */
     font-weight: bold;
     color: white;
+    display: flex;
+    align-items: center; /* para que imagen y texto queden centrados verticalmente */
+    gap: 5px; /* separación entre img y texto */
 }
 
 .nav-links {
