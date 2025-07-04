@@ -39,7 +39,7 @@ nav {
 }
 
 .logo img {
-    max-height: 100px !important;
+    max-height: 50px !important;
     height: auto !important;
     width: auto !important;
     object-fit: contain;
