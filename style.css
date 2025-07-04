@@ -14,7 +14,8 @@
 header {
     background: linear-gradient(135deg, #0E4D92 0%, #1a5ba8 100%);
     color: white;
-    padding: 0.6rem 0; /* Reducido de 1rem a 0.6rem */
+    padding: 0.3rem 0; /* Reducido de 1rem a 0.6rem */
+    height: 50px;
     position: fixed;
     width: 100%;
     top: 0;
