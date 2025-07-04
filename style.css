@@ -1,0 +1,19 @@
+/* style.css separado */
+/* Aquí copié todas las reglas de tu <style> original */
+
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== Body ===== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* … Aquí van las demás reglas que ya están en tu archivo original … */
+
+/* ===== Header ===== */
+/* ===== Hero Section ===== */
+/* ===== Intro Section ===== */
+/* … etc … */
