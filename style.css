@@ -68,10 +68,17 @@ nav {
 }
 
 .logo img {
-    height: 45px; /* MÁS GRANDE - aumentado de 35px */
+    height: 45px;
     width: auto;
 }
+.logo svg {
+    fill: white;
+}
 
+.hero-logo-text svg {
+    fill: white;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
 .menu-toggle {
     display: block;
     font-size: 1.2rem;
@@ -183,13 +190,10 @@ nav {
     z-index: 2;
 }
 
-.hero-logo-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    animation: fadeSlideDown 1s ease-in-out forwards;
+.hero-logo-text img {
+    height: 120px;
+    width: auto;
+    transform: translateY(10px);
 }
 
 .hero-logo-text img {
@@ -720,8 +724,8 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .hero {
-        padding: 85px 10px 40px; /* Aumentado padding-top por header más grande */
+    .logo img {
+        height: 35px; /* Aumentado padding-top por header más grande */
     }
 
     .hero h1 {
@@ -737,10 +741,11 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         gap: 0.5rem;
     }
 
-    .hero-logo-text img {
-        height: 60px;
+      .hero-logo-text img {
+        height: 80px; /* Detallado pero más pequeño en móvil */
+        transform: translateY(8px);
     }
-
+}
     .logo img {
         height: 35px; /* Aumentado de 28px */
     }
