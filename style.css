@@ -189,7 +189,7 @@ nav {
 .hero-logo-text img {
     height: 150px; /* CAMBIAR a 100px o 120px para más grande */
     width: auto;
-    transform: translateY(5px);
+    transform: translateY(1px);
 }
 
 .hero h1 {
