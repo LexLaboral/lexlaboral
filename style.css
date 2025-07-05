@@ -44,7 +44,7 @@ ul, ol {
 header {
     background: linear-gradient(135deg, #0E4D92 0%, #1a5ba8 100%);
     color: white;
-    padding: 0.7rem 0; /* Aumentado para más espacio */
+    padding: 0.7rem 0; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -61,8 +61,8 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.2rem; /* MÁS CERCA - reducido de 0.5rem */
-    font-size: 1.6rem; /* MÁS GRANDE - aumentado de 1.2rem */
+    gap: 0.2rem; 
+    font-size: 1.6rem; 
     font-weight: bold;
     color: white;
 }
@@ -71,6 +71,7 @@ nav {
     height: 45px;
     width: auto;
 }
+
 .logo svg {
     fill: white;
 }
@@ -79,70 +80,97 @@ nav {
     fill: white;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
 }
+
+.hero-logo-text img {
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
 .menu-toggle {
     display: block;
     font-size: 1.2rem;
     cursor: pointer;
     color: white;
-    padding: 0.5rem; /* CENTRADO - agregado padding */
+    padding: 0.5rem; 
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1001;
 }
 
+/* MENÚ HAMBURGUESA CORREGIDO */
 .nav-links {
     display: none;
     flex-direction: column;
     gap: 0.5rem;
     position: absolute;
-    top: 55px; /* MÁS CERCA - reducido de 60px */
-    right: 15px; /* MÁS CERCA - reducido de 20px */
-    background: rgba(14, 77, 146, 0.95); /* TRANSPARENTE - cambiado de sólido */
-    backdrop-filter: blur(10px); /* EFECTO BLUR */
-    padding: 1rem;
-    border-radius: 8px;
+    top: 60px; 
+    right: 5px; /* CORREGIDO: Más cerca del borde */
+    background: rgba(14, 77, 146, 0.98); /* CORREGIDO: Más opaco para mejor legibilidad */
+    backdrop-filter: blur(15px); 
+    padding: 1.2rem;
+    border-radius: 12px;
     z-index: 999;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out; /* CORREGIDO: Transición más rápida */
     opacity: 0;
     pointer-events: none;
     list-style: none;
     margin: 0;
-    border: 1px solid rgba(255,255,255,0.1); /* BORDE SUTIL */
+    border: 1px solid rgba(255,255,255,0.2); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* CORREGIDO: Mejor sombra */
+    min-width: 180px; /* CORREGIDO: Ancho mínimo para evitar text overflow */
 }
 
 .nav-links a {
-    color: white;
+    color: white !important; /* CORREGIDO: Forzar color blanco */
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    padding: 8px;
-    font-size: 0.9rem;
+    padding: 12px 8px; /* CORREGIDO: Más padding vertical */
+    font-size: 1rem; /* CORREGIDO: Ligeramente más grande */
+    display: block;
+    border-radius: 6px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3); /* CORREGIDO: Text shadow para mejor legibilidad */
 }
 
 .nav-links a:hover {
-    color: #25D366;
+    color: #25D366 !important; /* CORREGIDO: Forzar color hover */
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
 }
 
 .nav-links.show {
-    max-height: 400px;
+    max-height: 300px; /* CORREGIDO: Altura suficiente */
     opacity: 1;
     display: flex;
     pointer-events: auto;
 }
 
 .nav-links li {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
     opacity: 0;
     transform: translateY(-10px);
-    animation: fadeInLink 0.5s forwards;
+    animation: fadeInLink 0.4s forwards; /* CORREGIDO: Animación más rápida */
 }
 
 .nav-links li:last-child {
     border-bottom: none;
 }
+
+/* ANIMACIÓN MEJORADA PARA LOS LINKS */
+@keyframes fadeInLink {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-links.show li:nth-child(1) { animation-delay: 0.1s; }
+.nav-links.show li:nth-child(2) { animation-delay: 0.15s; }
+.nav-links.show li:nth-child(3) { animation-delay: 0.2s; }
+.nav-links.show li:nth-child(4) { animation-delay: 0.25s; }
 
 /* Hamburger Menu Animation */
 .hamburger-icon .bar {
@@ -167,7 +195,7 @@ nav {
 .hero {
     background: linear-gradient(135deg, #0E4D92 0%, #1a5ba8 100%);
     color: white;
-    padding: 80px 0 50px;
+    padding: 85px 0 50px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -204,6 +232,7 @@ nav {
     margin-bottom: 1.5rem;
     animation: fadeSlideDown 1s ease-in-out forwards;
 }
+
 .hero-subtitle {
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -594,8 +623,7 @@ footer {
     position: relative;
     overflow: hidden;
 }
-.hero {
-    padding: 85px 0 50px;
+
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -688,13 +716,6 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fadeInLink {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -722,11 +743,20 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .logo img {
-        height: 35px; /* Aumentado padding-top por header más grande */
+        height: 35px; 
+    }
+
+    .logo {
+        font-size: 1.3rem; 
+        gap: 0.15rem; 
     }
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 85px 0 50px;
     }
 
     .hero-subtitle {
@@ -738,18 +768,9 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         gap: 0.5rem;
     }
 
-      .hero-logo-text img {
-        height: 80px; /* Detallado pero más pequeño en móvil */
+    .hero-logo-text img {
+        height: 80px; 
         transform: translateY(8px);
-    }
-}
-    .logo img {
-        height: 35px; /* Aumentado de 28px */
-    }
-
-    .logo {
-        font-size: 1.3rem; /* Aumentado para móvil */
-        gap: 0.15rem; /* Más cerca en móvil */
     }
 
     .section-title {
@@ -787,11 +808,18 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         font-size: 1.8rem;
     }
 
+    /* MENÚ HAMBURGUESA MÓVIL CORREGIDO */
     .nav-links {
-        right: 10px; /* MÁS CERCA en móvil */
-        top: 65px; /* AJUSTADO para header más grande */
-        background: rgba(14, 77, 146, 0.95); /* MANTENIDO TRANSPARENTE */
-        backdrop-filter: blur(10px);
+        right: 5px; /* CORREGIDO: Consistente con desktop */
+        top: 65px; 
+        background: rgba(14, 77, 146, 0.98); 
+        backdrop-filter: blur(15px);
+        min-width: 160px; /* CORREGIDO: Ancho mínimo en móvil */
+    }
+
+    .nav-links a {
+        font-size: 0.95rem; /* CORREGIDO: Tamaño apropiado para móvil */
+        padding: 10px 8px;
     }
 
     .float-contacto {
