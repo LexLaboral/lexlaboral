@@ -182,13 +182,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.05rem; /* CAMBIAR a 0.5rem para más cerca */
+    gap: 0.5rem; /* CAMBIAR a 0.5rem para más cerca */
     margin-bottom: 1.5rem;
 }
 
 .hero-logo-text img {
-    height: 300px; /* CAMBIAR a 100px o 120px para más grande */
+    height: 150px; /* CAMBIAR a 100px o 120px para más grande */
     width: auto;
+    transform: translateY(10px);
 }
 
 .hero h1 {
