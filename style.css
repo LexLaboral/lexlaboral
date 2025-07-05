@@ -187,9 +187,9 @@ nav {
 }
 
 .hero-logo-text img {
-    height: 150px; /* CAMBIAR a 100px o 120px para más grande */
+    height: 100px; /* CAMBIAR a 100px o 120px para más grande */
     width: auto;
-    transform: translateY(10px);
+    transform: translateX(5px);
 }
 
 .hero h1 {
