@@ -219,7 +219,7 @@ nav {
 }
 
 .hero-logo-text img {
-    height: 120px;
+    height: 160px;
     width: auto;
     transform: translateY(10px);
 }
@@ -769,7 +769,7 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
     }
 
     .hero-logo-text img {
-        height: 80px; 
+        height: 100px; 
         transform: translateY(8px);
     }
 
