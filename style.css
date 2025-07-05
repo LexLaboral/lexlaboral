@@ -196,18 +196,14 @@ nav {
     transform: translateY(10px);
 }
 
-.hero-logo-text img {
-    height: 80px;
-    width: auto;
+.hero-logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
+    animation: fadeSlideDown 1s ease-in-out forwards;
 }
-
-.hero h1 {
-    font-size: 2.2rem;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    animation: slideInDown 1s ease-out;
-}
-
 .hero-subtitle {
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -598,7 +594,8 @@ footer {
     position: relative;
     overflow: hidden;
 }
-
+.hero {
+    padding: 85px 0 50px;
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
