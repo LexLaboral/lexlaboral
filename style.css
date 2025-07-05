@@ -185,13 +185,11 @@ nav {
     gap: 0.5rem; /* CAMBIAR a 0.5rem para más cerca */
     margin-bottom: 1.5rem;
 }
-
 .hero-logo-text img {
-    height: 150px; /* CAMBIAR a 100px o 120px para más grande */
+    height: 120px; /* CAMBIAR a 100px o 120px para más grande */
     width: auto;
-    transform: translateY(1px);
+    transform: translateY(3px);
 }
-
 .hero h1 {
     font-size: 2.2rem;
     margin: 0;
