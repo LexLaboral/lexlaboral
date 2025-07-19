@@ -844,3 +844,22 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         padding: 40px 0;
     }
 }
+/* ELIMINAR TODAS LAS BOLITAS */
+.bokeh {
+    display: none !important;
+}
+
+/* TAMBIÉN ELIMINAR EL EFECTO SVG DEL HERO */
+.hero::before {
+    display: none !important;
+}
+
+/* BACKGROUND PARA LA IMAGEN LexLaboralboard.jpeg CON SHADE AZUL */
+.hero {
+    background: linear-gradient(
+        135deg, 
+        rgba(14, 77, 146, 0.9) 0%, 
+        rgba(26, 91, 168, 0.9) 100%
+    ), 
+    url('LexLaboralboard.jpeg') center/cover no-repeat;
+    /* El gradiente azul se superpone a la imagen manteniendo legibilidad perfecta */
