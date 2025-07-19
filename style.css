@@ -858,8 +858,8 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
 .hero {
     background: linear-gradient(
         135deg, 
-        rgba(14, 77, 146, 0.60) 0%, 
-        rgba(26, 91, 168, 0.60) 100%
+        rgba(14, 77, 146, 0.50) 0%, 
+        rgba(26, 91, 168, 0.50) 100%
     ), 
     url('LexLaboralboard.jpeg') center/cover no-repeat;
     /* El gradiente azul se superpone a la imagen manteniendo legibilidad perfecta */
