@@ -866,3 +866,7 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
 html {
     scroll-padding-top: 80px;
 }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
