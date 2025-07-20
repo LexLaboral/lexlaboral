@@ -854,7 +854,6 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
     display: none !important;
 }
 
-/* BACKGROUND PARA LA IMAGEN LexLaboralboard.jpeg CON SHADE AZUL */
 .hero {
     background: linear-gradient(
         135deg, 
@@ -862,11 +861,32 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         rgba(26, 91, 168, 0.50) 100%
     ), 
     url('LexLaboralboard.jpeg') center/cover no-repeat;
-    /* El gradiente azul se superpone a la imagen manteniendo legibilidad perfecta */
+}
+
 html {
     scroll-padding-top: 80px;
 }
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0E4D92, #1a5ba8);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 15px rgba(14, 77, 146, 0.3);
+    animation: pulse 2s infinite;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(14, 77, 146, 0.4);
+    color: white;
+}
