@@ -890,3 +890,21 @@ html {
     box-shadow: 0 6px 20px rgba(14, 77, 146, 0.4);
     color: white;
 }
+.token-card,
+.service-card,
+.paquete,
+.intro-box,
+.usage-item {
+    border-top: 4px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, #0E4D92, #25D366) border-box;
+    transition: all 0.3s ease;
+}
+
+.token-card:hover,
+.service-card:hover,
+.paquete:hover,
+.intro-box:hover,
+.usage-item:hover {
+    border-top: 4px solid #25D366;
+}
