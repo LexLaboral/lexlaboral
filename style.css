@@ -908,3 +908,6 @@ html {
 .usage-item:hover {
     border-top: 4px solid #25D366;
 }
+.logo {
+    cursor: pointer;
+}
