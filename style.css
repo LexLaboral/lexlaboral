@@ -860,7 +860,7 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
         rgba(14, 77, 146, 0.50) 0%, 
         rgba(26, 91, 168, 0.50) 100%
     ), 
-    url('LexLaboralboard.jpeg') center/cover no-repeat;
+    url('index-page.jpeg') center/cover no-repeat;
 }
 
 html {
