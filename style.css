@@ -864,5 +864,5 @@ footer .bokeh { background: rgba(14,77,146,0.1); }
     url('LexLaboralboard.jpeg') center/cover no-repeat;
     /* El gradiente azul se superpone a la imagen manteniendo legibilidad perfecta */
 html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 80px;
 }
